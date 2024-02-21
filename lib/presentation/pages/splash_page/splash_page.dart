@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -20,26 +19,8 @@ class SplashPage extends StatelessWidget {
             end: Alignment.bottomCenter,
           ),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/app-icon.png'),
-            Text(
-              'Omotenashi',
-              style: GoogleFonts.viga(
-                fontSize: 40,
-                color: Colors.white,
-                letterSpacing: 0.5,
-              ),
-            ),
-            Text(
-              'Asian Food & Halal Food',
-              style: GoogleFonts.inter(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  color: const Color(0xFF7F7D8B)),
-            ),
-          ],
+        child: Center(
+          child: Image.asset('assets/images/logo1.png'),
         ),
       ),
     );
