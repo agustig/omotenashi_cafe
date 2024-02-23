@@ -75,7 +75,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           OutlinedButton(
                             onPressed: () => slideController.animateToPage(
                               sliders.length - 1,
-                              duration: const Duration(microseconds: 200),
+                              duration: const Duration(milliseconds: 200),
                               curve: Curves.easeInOut,
                             ),
                             style: OutlinedButton.styleFrom(
@@ -96,7 +96,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           ElevatedButton(
                             onPressed: () => slideController.animateToPage(
                               currentSlide + 1,
-                              duration: const Duration(microseconds: 200),
+                              duration: const Duration(milliseconds: 200),
                               curve: Curves.easeInOut,
                             ),
                             style: ElevatedButton.styleFrom(
